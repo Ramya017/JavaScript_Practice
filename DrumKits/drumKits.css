@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    /* the 100% of the view port height brings the content to the center */
+    background-color: lightgreen;
+}
+.container{
+    text-align: center;
+    /* the text-align: center; applied to the parent(div with class .container) of .btn with bring all the btn to the center */
+}
+.btn{
+    all: unset;
+    padding: 50px 60px;
+    background-color: white;
+    margin: 10px;
+    font-size: 30px;
+    min-width: 120px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    background-image: url("Asset/Images/crash.png");
+    background-size: cover;
+    color: white;
+    font-family: cursive;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.btn:hover{
+    color: lightgreen;
+}
+.btn:active{
+    background-size: 110%;
+}
+h1{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    white-space: nowrap;
+}

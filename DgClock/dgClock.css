@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-image: url('timepass.jpg');
+    /* linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) */
+    background-size: cover;
+   background-position: center;
+   font-family: Poppins, sans-serif;
+     /* overflow: hidden; because you have
+    given back-img cover there is no overflow */
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.clock{
+    display: flex;
+    flex-wrap:nowrap;
+}
+.clock div{
+    margin: 5px;
+    position: relative;
+}
+.clock span{
+    width: 100px;
+    height: 80px;
+    background-color:rgb(1, 1, 255);
+    color: white;
+    opacity: .6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.clock .text{
+    height:30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: .8;
+}
+#ampm{
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+  background-color: green;
+}
+/* button{
+    all: unset;
+} */
+
+/* .class span{
+    display: flex; mistake--why? find out
+    align-items: center;
+    justify-content: center;
+} don't you reme that background img is not 
+visible util given a height and w 
+what mistake you had done idoit-you put the image in another folder and  
+thinking why it is not loading
+.8 = 80%(meaning)*/

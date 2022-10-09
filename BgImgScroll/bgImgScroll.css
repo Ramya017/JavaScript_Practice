@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*,::after,::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+.bg-image{
+    width: 100%;
+    height: 100vh;
+    background-image: url("nature1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 160%;
+    background-attachment: fixed;
+}
+
+.container{
+    padding: 50px;
+}
+h1{
+    font-size: 50px;
+}
+p{
+    color: rgb(91, 91, 91);
+}
+@media (max-width:500px) {
+    .container{
+        padding: 10px;
+    }
+}
+
+
+
+
+
+/* you didn't put a semicolon to the eairler tag therefore the next was showing an error
+--without transition the websites work better */
